@@ -2,7 +2,7 @@ const express = require("express");
 
 const server = express();
 
-server.get("/teste", (req, res) => {
+server.get("/users", (req, res) => {
   const { name } = req.query;
   res.send(`Hello, ${name}!!!`);
 });
